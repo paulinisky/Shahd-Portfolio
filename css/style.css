@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* font variables */
+  --headings-ff: 'Playfair Display', serif;
+  --text-ff: 'Raleway', sans-serif;
+
+  --fw-n: ;
+  --fw-m: ;
+  --fw-b: ;
+
+  --fs-2: ;
+  --fs-3: ;
+  --fs-p: ;
+
+
+  /* color variables */
+  --primary-clr: #A68549;
+  --secondary-clr: value;
+  --background-clr: #F2F1EE;
+  --hover-clr: ;
+  --accent-clr: ;
+
+  /* padding variables */
+
+  /* shadow and border radius variables */
+
+  --shadow: ;
+  --br: ;
+}
+
+html {
+  font-size: 10px;
+  background-color: var(--background-clr);
+}
+
+h1 {
+  font-size: min(max(6rem, 10vw), 10rem);
+  font-family: var(--headings-ff);
+}
+
+h6 {
+  font-size: min(max(1.6rem, 2.4vw), 2.4rem);
+  font-family: var(--text-ff);
+}
+
+a {
+  font-family: var(--text-ff);
+  text-decoration: none;
+}
