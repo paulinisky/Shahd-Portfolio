@@ -20,7 +20,7 @@
   --primary-clr: #A68549;
   --secondary-clr: value;
   --light: #F2F1EE;
-  --hover-clr: ;
+  --hover-clr: #7A581B;
   --accent-clr: ;
 
   /* padding variables */
@@ -36,6 +36,11 @@ html {
   background-color: var(--light);
 }
 
+header {
+  border-bottom: .15rem solid var(--primary-clr);
+  padding-bottom: 1rem;
+}
+
 h1 {
   font-size: min(max(6rem, 10vw), 10rem);
   font-family: var(--headings-ff);
@@ -49,19 +54,47 @@ h6 {
 
 }
 
-p {
+p, a {
   font-family: var(--text-ff);
+  font-size: min(max(1.2rem, 2.4vw), 1.6rem);
 }
 
 a {
-  font-family: var(--text-ff);
   text-decoration: none;
   color: var(--light);
 
 }
 
-.bg-image {
+.hero-image {
   height: 60vh;
   background-image: url('../images/hero-image.svg');
   background-repeat: no-repeat;
+}
+
+.hero-txt {
+  border: 2px solid red;
+  padding: 12rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.button {
+  background-color: var(--primary-clr);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  align-self: center;
+}
+
+.button:hover {
+  background-color: var(--hover-clr);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: background-color 1s;
+}
+
+.card {
+  border: 2px solid red;
 }
