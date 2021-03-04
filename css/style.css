@@ -61,8 +61,7 @@ a {
 }
 
 .bg-image {
-  /* padding: 10%; */
-  height: 50rem;
-  background-image: url('../../images/hero-image.svg');
+  height: 60vh;
+  background-image: url('../images/hero-image.svg');
   background-repeat: no-repeat;
 }
