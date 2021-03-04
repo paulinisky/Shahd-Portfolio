@@ -19,7 +19,7 @@
   /* color variables */
   --primary-clr: #A68549;
   --secondary-clr: value;
-  --background-clr: #F2F1EE;
+  --light: #F2F1EE;
   --hover-clr: ;
   --accent-clr: ;
 
@@ -33,20 +33,36 @@
 
 html {
   font-size: 10px;
-  background-color: var(--background-clr);
+  background-color: var(--light);
 }
 
 h1 {
   font-size: min(max(6rem, 10vw), 10rem);
   font-family: var(--headings-ff);
+  color: var(--light);
 }
 
 h6 {
   font-size: min(max(1.6rem, 2.4vw), 2.4rem);
+  font-family: var(--text-ff);
+  color: var(--light);
+
+}
+
+p {
   font-family: var(--text-ff);
 }
 
 a {
   font-family: var(--text-ff);
   text-decoration: none;
+  color: var(--light);
+
+}
+
+.bg-image {
+  /* padding: 10%; */
+  height: 50rem;
+  background-image: url('../../images/hero-image.svg');
+  background-repeat: no-repeat;
 }
